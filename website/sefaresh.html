@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ثبت سفارش - FOOD HOUSE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="sefaresh.html"><img src="logo.png" alt=" FOOD HOUSE"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li><a href="menu.html">منو</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#contact">ارتباط با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="order-form" id="order">
+        <div class="container">
+            <h2>ثبت سفارش</h2>
+            <form action="submit_order.php" method="post">
+                <div class="form-group">
+                    <label for="name">نام:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">شماره تماس:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">آدرس:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="food">انتخاب غذا:</label>
+                    <select id="food" name="food" required>
+                        <option value="burger">چیز برگر</option>
+                        <option value="spaghetti">اسپاگتی</option>
+                        <option value="kebab">کباب مخصوص</option>
+                        <option value="pizza">پیتزا مارگاریتا</option>
+                        <option value="salad">ساندویچ فصل</option>
+                        <option value="soup">سوپ قارچ</option>
+                        <option value="dessert">دسر </option>
+                        <option value="icecream"> بشقاب سبزیجات</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">تعداد:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">توضیحات اضافی:</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="اگر توضیحات اضافی دارید، اینجا وارد کنید..."></textarea>
+                </div>
+                <button type="submit" class="btn">ثبت سفارش</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 . تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
